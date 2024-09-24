@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+.div-nav{
+    text-align: center;
+}
+.logo{
+    width: 350px;
+}
+.li-nav{
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: black;
+    margin-bottom: 0.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*MAIN*/
+body{
+    background-image: url(./img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+h1{
+    font-size: 1.8rem;
+    padding-top: 20px;
+    text-align: center;
+    text-shadow: 2px 2px   white;
+}
+.div-inicio{
+    text-align: center;
+}
+.poster{
+    width: 350px;
+    padding-top: 32px;
+}
+.ul-inicio{
+    padding-top: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+.li-inicio{
+    list-style-type: none;
+}
+.div-p-inicio{
+    padding: 16px;
+    padding-top: 16px;
+    background-color: white;
+    font-size: 1.08rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*HISTORIA*/
+iframe{
+    display: block; 
+    width: 100%;
+    aspect-ratio: 16/9;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 0;
+}
+.div-historia{
+    padding: 20px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.p-intro{
+    color: rgb(88, 88, 88);
+    font-size: 1.03rem;
+}
+.p-historia{
+    font-size: 1.08rem;
+}
+
+
+/*PERSONAJES*/
+section{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h2{
+    font-size: 1.3rem;
+    margin-top: 30px;
+    padding: 3px;
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+    background-color: white;
+}
+.img-personajes{
+    padding-top: 25px;
+    height: 436px;
+}
+.p-interpretado{
+    padding: 10px;
+    background-color: rgba(116, 115, 115, 0.728); 
+}
+.p-info{
+    font-size: 1.08rem;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/*JUEGO*/
+.h1-juego{
+    padding-bottom: 20px;
+}
+.juego-cap{
+    width: 100%;
+    padding-top: 5px;
+}
+.contenedor-capturas{
+    padding: 1rem;
+}
+
+
+/*SORTEO*/
+h3{
+    text-align: center;
+    padding-top: 15px;
+    background-color: white;
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+form{
+    padding: 10px;
+    background-color: white;
+    font-size: 1.08rem;
+}
+.div-secciones {
+    margin-bottom: 15px;
+}
+.div-secciones label {
+    display: block;
+    margin-bottom: 5px;
+}
+.div-secciones input, .div-secciones select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.checkbox-selecciones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.checkbox-selecciones label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+.checkbox-selecciones input {
+    margin-right: 10px;
+}
+.sorteo-img{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.fig-sorteo{
+    width: 300px;
+}
+.div-secciones button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.div-secciones button:hover {
+    background-color: rgb(34, 34, 34);
+}
+
+
+
+/*FOOTER*/
+footer{
+    max-width: 1200px;
+    margin: auto;
+}
+.agustin{
+    text-align: center;
+    padding-top: 60px;
+}
+.diva{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iagus{
+    width: 250px;
+}
+.fuagus{
+    padding: 20px;
+}
+.pagus{
+    list-style-type: none;
+    display: flex; 
+    justify-content: flex-start; 
+    padding: 3px;
+    font-size: 1.05rem;
+}
+.hagus{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+@media screen and (min-width: 576px) {
+    nav ul{
+        text-align: center;
+        margin-top: 16px;
+    }
+    nav ul li{
+        display: inline-block;
+        min-width: 150px;
+    }
+
+    /*HISTORIA*/
+    iframe{
+        height: 340px; 
+    }
+    /*PERSONAJES*/
+    .contenedor-personajes {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 2rem; 
+    }
+    /*JUEGO*/
+    .contenedor-capturas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    /*SORTEO*/
+    form{
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 993px) {
+     
+    /*HISTORIA*/
+     iframe{
+        height: 520px; 
+    }
+    /*PERSONAJES*/
+    .contenedor-personajes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 2rem; 
+    }
+    /*JUEGO*/
+    .contenedor-capturas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+}
