@@ -131,13 +131,16 @@ h2{
 
 
 /*SORTEO*/
-h3{
+.h-sorteo{
     text-align: center;
     padding-top: 15px;
     background-color: white;
     margin-top: 25px;
     font-size: 1.5rem;
+    border-top: none;
+    border-bottom: none;
 }
+
 form{
     padding: 10px;
     background-color: white;
@@ -223,6 +226,7 @@ footer{
 }
 .hagus{
     font-size: 1.5rem;
+    padding-top: 10px;
 }
 
 
